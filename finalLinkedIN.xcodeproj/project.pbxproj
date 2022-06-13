@@ -10,13 +10,13 @@
 		3657B83F2855DA5000AD6AEF /* EmpRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3657B83E2855DA5000AD6AEF /* EmpRegisterVC.swift */; };
 		3657B8412855E38500AD6AEF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3657B8402855E38500AD6AEF /* LoginVC.swift */; };
 		3657B8432855E6A200AD6AEF /* OrgRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3657B8422855E6A200AD6AEF /* OrgRegisterVC.swift */; };
-		A9B3D157285642B300C880A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9B3D156285642B300C880A9 /* GoogleService-Info.plist */; };
 		A9B3D15A2856466600C880A9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A9B3D1592856466600C880A9 /* FirebaseAuth */; };
 		A9B3D15C2856466600C880A9 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A9B3D15B2856466600C880A9 /* FirebaseDatabase */; };
 		A9B3D15E2856466600C880A9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A9B3D15D2856466600C880A9 /* FirebaseStorage */; };
 		A9B3D16028578DF400C880A9 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3D15F28578DF400C880A9 /* Utilities.swift */; };
 		A9B3D162285792AC00C880A9 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3D161285792AC00C880A9 /* ProfileVC.swift */; };
 		A9B3D164285796F600C880A9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3D163285796F600C880A9 /* HomeVC.swift */; };
+		B93F73702857A25F00CF8EE1 /* abcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93F736F2857A25F00CF8EE1 /* abcViewController.swift */; };
 		FB624C3D28316BB600FDB328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB624C3C28316BB600FDB328 /* AppDelegate.swift */; };
 		FB624C3F28316BB600FDB328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB624C3E28316BB600FDB328 /* SceneDelegate.swift */; };
 		FB624C4128316BB600FDB328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB624C4028316BB600FDB328 /* ViewController.swift */; };
@@ -29,10 +29,10 @@
 		3657B83E2855DA5000AD6AEF /* EmpRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpRegisterVC.swift; sourceTree = "<group>"; };
 		3657B8402855E38500AD6AEF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3657B8422855E6A200AD6AEF /* OrgRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgRegisterVC.swift; sourceTree = "<group>"; };
-		A9B3D156285642B300C880A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9B3D15F28578DF400C880A9 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		A9B3D161285792AC00C880A9 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		A9B3D163285796F600C880A9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		B93F736F2857A25F00CF8EE1 /* abcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = abcViewController.swift; sourceTree = "<group>"; };
 		FB624C3928316BB600FDB328 /* finalLinkedIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalLinkedIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB624C3C28316BB600FDB328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB624C3E28316BB600FDB328 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,13 +83,13 @@
 				FB624C4528316BB800FDB328 /* Assets.xcassets */,
 				FB624C4728316BB800FDB328 /* LaunchScreen.storyboard */,
 				FB624C4A28316BB800FDB328 /* Info.plist */,
-				A9B3D156285642B300C880A9 /* GoogleService-Info.plist */,
 				3657B83E2855DA5000AD6AEF /* EmpRegisterVC.swift */,
 				3657B8402855E38500AD6AEF /* LoginVC.swift */,
 				3657B8422855E6A200AD6AEF /* OrgRegisterVC.swift */,
 				A9B3D15F28578DF400C880A9 /* Utilities.swift */,
 				A9B3D161285792AC00C880A9 /* ProfileVC.swift */,
 				A9B3D163285796F600C880A9 /* HomeVC.swift */,
+				B93F736F2857A25F00CF8EE1 /* abcViewController.swift */,
 			);
 			path = finalLinkedIN;
 			sourceTree = "<group>";
@@ -162,7 +162,6 @@
 			files = (
 				FB624C4928316BB800FDB328 /* LaunchScreen.storyboard in Resources */,
 				FB624C4628316BB800FDB328 /* Assets.xcassets in Resources */,
-				A9B3D157285642B300C880A9 /* GoogleService-Info.plist in Resources */,
 				FB624C4428316BB600FDB328 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +178,7 @@
 				A9B3D16028578DF400C880A9 /* Utilities.swift in Sources */,
 				A9B3D164285796F600C880A9 /* HomeVC.swift in Sources */,
 				FB624C3D28316BB600FDB328 /* AppDelegate.swift in Sources */,
+				B93F73702857A25F00CF8EE1 /* abcViewController.swift in Sources */,
 				A9B3D162285792AC00C880A9 /* ProfileVC.swift in Sources */,
 				3657B83F2855DA5000AD6AEF /* EmpRegisterVC.swift in Sources */,
 				FB624C3F28316BB600FDB328 /* SceneDelegate.swift in Sources */,
