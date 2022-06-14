@@ -423,7 +423,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ky-1B-81S">
-                                <rect key="frame" x="45" y="555" width="127" height="38"/>
+                                <rect key="frame" x="45" y="604" width="127" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="View Profile">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -435,7 +435,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ae-oe-ovW">
-                                <rect key="frame" x="249" y="555" width="90" height="38"/>
+                                <rect key="frame" x="249" y="604" width="90" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Explore">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -779,23 +779,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhJ-Xl-fwI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="681.53846153846155" y="22.748815165876778"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="peg-uK-nKE">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3bO-fA-gc9" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YmZ-t6-rsH">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="QKb-TZ-3PH" kind="relationship" relationship="viewControllers" id="mVF-JU-GFr"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EK8-Xo-k7g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2401.5384615384614" y="-395.26066350710897"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="tintColor"/>
