@@ -19,8 +19,9 @@ class EmpRegisterVC: UIViewController {
     @IBOutlet weak var PassT: UITextField!
     @IBOutlet weak var MobileT: UITextField!
     @IBOutlet weak var CityT: UITextField!
-    
-    
+    @IBOutlet weak var stateT: UITextField!
+    @IBOutlet weak var cnfmPassT: UITextField!
+    @IBOutlet weak var countryT: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +39,16 @@ class EmpRegisterVC: UIViewController {
         let password = PassT.text ?? ""
         let mobile = MobileT.text ?? ""
         let city = CityT.text ?? ""
+        let state = stateT.text ?? ""
+        let confirmPass = cnfmPassT.text ?? ""
+        let country = countryT.text ?? ""
         
         Auth.auth().createUser(withEmail: email, password: password) { result, err in
             if err == nil {
-                print("No error in registration")
-                self.showAlert(title: "Registeration successfull", msg: "Login using Email ID and Password")
+               print("No error in registration")
+               self.showAlert(title: "Registeration successfull", msg: "Login using Email ID and Password")
                 
+                DBUtility.instance.saveEmpDetails(fullname: fullname, email: email, city: city, mobile: mobile, dob: dob, state: state, country: country)
                 
         }
             else {
