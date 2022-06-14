@@ -45,6 +45,23 @@ class LoginVC: UIViewController {
     }
     
     
+    
+    @IBAction func forgetClick(_ sender: Any) {
+        
+        Auth.auth().sendPasswordReset(withEmail: UserT.text!) { err in
+            
+            if let error = err {
+                self.showAlert(title: "Error", msg: error.localizedDescription)
+            }
+            
+            self.showAlert(title: "Email sent", msg: "Check your email and click on link to reset password")
+
+            
+        }
+    }
+    
+    
+    
     @IBAction func regEmpClick(_ sender: Any) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
