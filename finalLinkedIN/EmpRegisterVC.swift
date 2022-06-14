@@ -45,9 +45,10 @@ class EmpRegisterVC: UIViewController {
         
         Auth.auth().createUser(withEmail: email, password: password) { result, err in
             if err == nil {
-                print("No error in registration")
-                self.showAlert(title: "Registeration successfull", msg: "Login using Email ID and Password")
+               print("No error in registration")
+               self.showAlert(title: "Registeration successfull", msg: "Login using Email ID and Password")
                 
+                DBUtility.instance.saveEmpDetails(fullname: fullname, email: email, city: city, mobile: mobile, dob: dob, state: state, country: country)
                 
         }
             else {

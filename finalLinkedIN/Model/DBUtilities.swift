@@ -42,6 +42,81 @@ class DBUtility {
     func saveEmpDetails(fullname:String, email: String, city: String, mobile: String, dob: String, state : String, country : String){
           
           let loggedInUser = Auth.auth().currentUser
+          let EmpAccount = Account(fullname: fullname, dob: dob, email: email, mobile: mobile, city: city, state: state, country: country)
+       
+        if let user = loggedInUser {
+            dbRef.child("Users").child(user.uid).setValue(EmpAccount.toDict())
+        }
     
 }
+    func getUserDetails(completionHandler: @escaping (Account) -> Void) {
+
+            // get logged in user
+
+            let loggedInUser = Auth.auth().currentUser
+
+            if let user = loggedInUser {
+
+                // read from realtime database
+
+                
+
+                let uNode = dbRef.child("Users").child(user.uid)
+
+                
+
+                uNode.getData { err, snapshot in
+
+                    
+
+                    if err == nil {
+
+                        
+
+                        let info = snapshot?.value as! Dictionary<String, String>
+
+                        
+
+                        let email = info["email"] ?? ""
+
+                        let mobile = info["mobile"] ?? ""
+
+                        let fullname = info["fullname"] ?? ""
+
+                        let city = info["city"] ?? ""
+
+                        let password = info["password"] ?? ""
+                        let state = info["state"] ?? ""
+                        let country = info["country"] ?? ""
+                        let dob = info["dob"] ?? ""
+
+                        
+
+                        print("\(fullname)")
+
+                        print("\(email)")
+
+                        print("\(mobile)")
+
+                        print("\(city)")
+                        print("\(state)")
+                        print("\(country)")
+                        print("\(dob)")
+
+                        
+
+                        
+
+                        let acc = Account(fullname: fullname, dob: dob, email: email, mobile: mobile, city: city, state: state, country: country)
+                        
+
+                        completionHandler(acc)
+
+                    }
+
+                }
+
+            }
+
+        }
 }
