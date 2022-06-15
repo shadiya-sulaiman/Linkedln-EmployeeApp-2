@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AF22E7C285A09BE00C821A2 /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF22E7B285A09BE00C821A2 /* ForgetPasswordVC.swift */; };
 		3657B83F2855DA5000AD6AEF /* EmpRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3657B83E2855DA5000AD6AEF /* EmpRegisterVC.swift */; };
 		3657B8412855E38500AD6AEF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3657B8402855E38500AD6AEF /* LoginVC.swift */; };
 		3657B8432855E6A200AD6AEF /* OrgRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3657B8422855E6A200AD6AEF /* OrgRegisterVC.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AF22E7B285A09BE00C821A2 /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
 		3657B83E2855DA5000AD6AEF /* EmpRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpRegisterVC.swift; sourceTree = "<group>"; };
 		3657B8402855E38500AD6AEF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3657B8422855E6A200AD6AEF /* OrgRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgRegisterVC.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				3657B8422855E6A200AD6AEF /* OrgRegisterVC.swift */,
 				A9B3D161285792AC00C880A9 /* ProfileVC.swift */,
 				A9B3D163285796F600C880A9 /* HomeVC.swift */,
+				1AF22E7B285A09BE00C821A2 /* ForgetPasswordVC.swift */,
 			);
 			path = finalLinkedIN;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9B3D16628589D6C00C880A9 /* DBUtilities.swift in Sources */,
+				1AF22E7C285A09BE00C821A2 /* ForgetPasswordVC.swift in Sources */,
 				3657B8432855E6A200AD6AEF /* OrgRegisterVC.swift in Sources */,
 				FB624C4128316BB600FDB328 /* ViewController.swift in Sources */,
 				A9B3D16028578DF400C880A9 /* Utilities.swift in Sources */,
