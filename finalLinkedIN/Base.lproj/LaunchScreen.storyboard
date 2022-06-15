@@ -17,15 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connection-a-division-of-elettromedia-vector-logo" translatesAutoresizingMaskIntoConstraints="NO" id="qDh-8F-hfR">
+                                <rect key="frame" x="20" y="194" width="374" height="257"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="257" id="gmF-Qv-OaG"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cn" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3d6-qu-pcv">
-                                <rect key="frame" x="72" y="473" width="271" height="254"/>
+                                <rect key="frame" x="72" y="533" width="271" height="254"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="190"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="connection-a-division-of-elettromedia-vector-logo" translatesAutoresizingMaskIntoConstraints="NO" id="qDh-8F-hfR">
-                                <rect key="frame" x="20" y="194" width="374" height="257"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
@@ -34,9 +37,9 @@
                             <constraint firstItem="3d6-qu-pcv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="DNo-1g-k92"/>
                             <constraint firstItem="qDh-8F-hfR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Dwi-YA-knp"/>
                             <constraint firstItem="qDh-8F-hfR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="McY-0L-AeA"/>
-                            <constraint firstItem="3d6-qu-pcv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="429" id="fKA-oy-ntd"/>
+                            <constraint firstItem="3d6-qu-pcv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="489" id="fKA-oy-ntd"/>
                             <constraint firstItem="3d6-qu-pcv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="0.5" id="gmv-Wx-03S"/>
-                            <constraint firstItem="3d6-qu-pcv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="152" id="xxJ-Zu-tS0"/>
+                            <constraint firstItem="3d6-qu-pcv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="212" id="xxJ-Zu-tS0"/>
                         </constraints>
                     </view>
                 </viewController>
