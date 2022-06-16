@@ -744,7 +744,7 @@
             <objects>
                 <viewController id="kSL-7t-Xjx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CSP-DV-8DT">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="sMl-VQ-SvX"/>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -912,14 +912,14 @@
             <objects>
                 <viewController id="uY9-3g-sf5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xt1-RR-7D7">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rwo-6J-83I">
-                                <rect key="frame" x="0.0" y="156" width="390" height="334"/>
+                                <rect key="frame" x="0.0" y="156" width="390" height="305"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbl-vY-Z8d">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="104.66666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="95"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="ADD POST">
@@ -932,7 +932,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0Q-mM-xbf">
-                                        <rect key="frame" x="0.0" y="114.66666666666669" width="390" height="104.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="105" width="390" height="95"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="ADD DOCUMENT">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -941,7 +941,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9t0-Wq-H7G">
-                                        <rect key="frame" x="0.0" y="229.33333333333329" width="390" height="104.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="210" width="390" height="95"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Add Images">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -1195,10 +1195,10 @@
             </objects>
             <point key="canvasLocation" x="-366" y="-600"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Employee Tabbar-->
         <scene sceneID="1B4-h1-hGz">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="p43-40-ubk" sceneMemberID="viewController">
+                <tabBarController title="Employee Tabbar" automaticallyAdjustsScrollViewInsets="NO" id="p43-40-ubk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MPc-5W-j1d">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -1509,10 +1509,10 @@
             </objects>
             <point key="canvasLocation" x="1473.8461538461538" y="-311.37440758293837"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Organization Tabbar-->
         <scene sceneID="Ajo-jX-9hq">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fsQ-Yh-PhP" sceneMemberID="viewController">
+                <tabBarController title="Organization Tabbar" automaticallyAdjustsScrollViewInsets="NO" id="fsQ-Yh-PhP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GzR-hJ-Gqg">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -1800,8 +1800,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nod-03-qaT"/>
-        <segue reference="mLu-ex-ibp"/>
+        <segue reference="qN1-VT-Fue"/>
+        <segue reference="BZ8-gN-J5Y"/>
         <segue reference="3Z6-HI-9Ii"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="tintColor"/>
