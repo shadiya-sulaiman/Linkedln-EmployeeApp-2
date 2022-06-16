@@ -48,7 +48,7 @@ class EmpRegisterVC: UIViewController {
                print("No error in registration")
                self.showAlert(title: "Registeration successfull", msg: "Login using Email ID and Password")
                 
-                DBUtility.instance.saveEmpDetails(fullname: fullname, email: email, city: city, mobile: mobile, dob: dob, state: state, country: country)
+                DBUtility.instance.saveEmpDetails(fullname: fullname, email: email, city: city, mobile: mobile, dob: dob, state: state, country: country, Post: "")
                 
         }
             else {

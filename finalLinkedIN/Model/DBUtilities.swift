@@ -20,6 +20,7 @@ struct Account {
     var city : String
     var state : String
     var country : String
+    //var Post : String
    
     
     
@@ -206,4 +207,14 @@ class OrgUtility {
             }
 
         }
+}
+
+struct PostAccount{
+    
+    
+    
+    
+    
+    
+    
 }

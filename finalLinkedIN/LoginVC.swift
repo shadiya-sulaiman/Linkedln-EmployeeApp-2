@@ -12,10 +12,7 @@ import FirebaseStorage
 
 class LoginVC: UIViewController {
     
-    
-    @IBOutlet weak var UserT: UITextField!
-    
-    @IBOutlet weak var PassT: UITextField!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,23 +21,19 @@ class LoginVC: UIViewController {
     }
     
     
+    
+    @IBAction func EmployeeClick(_ sender: Any) {
+    }
+    
+    
+    
+    @IBAction func OrgClick(_ sender: Any) {
+    }
+    
+    
     @IBAction func loginClick(_ sender: Any) {
         
-        let emailLogin = UserT.text ?? ""
-        let password = PassT.text ?? ""
-        
-        Auth.auth().signIn(withEmail: emailLogin, password: password) { result, err in
-                  if err == nil{
-                      let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home") as! HomeVC
-                      self.show(vc, sender: nil)
-                      
-                      
-                      
-                  }
-                  else {
-                      self.showAlert(title: "Login failed..", msg: err!.localizedDescription)
-                       }
-        }
+       
         
     }
     

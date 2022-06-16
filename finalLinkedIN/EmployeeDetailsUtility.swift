@@ -8,24 +8,23 @@
 import Foundation
 class EmployeeDetails {
     
-    let name : String?
+    let Fullname : String?
     let city : String?
     let email : String?
     
     
     let mobile : String?
-    let profileUrl : String?
+   
    
 
-    init(name : String?, city : String?, email : String?, mobile : String?, doj : String?, empId : String?, salary : String?, profileUrl: String?, lat: Double?, lon: Double?){
+    init(fullname : String?, city : String?, email : String?, mobile : String?) {
         
-        self.name = name
+        self.Fullname = fullname
         self.city = city
         self.email = email
         self.mobile = mobile
      
-        self.profileUrl = profileUrl
-       
+          
     }
 }
 
