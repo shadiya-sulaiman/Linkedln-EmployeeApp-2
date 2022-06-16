@@ -18,6 +18,9 @@
 		A9B3D162285792AC00C880A9 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3D161285792AC00C880A9 /* ProfileVC.swift */; };
 		A9B3D164285796F600C880A9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3D163285796F600C880A9 /* HomeVC.swift */; };
 		A9B3D16628589D6C00C880A9 /* DBUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3D16528589D6C00C880A9 /* DBUtilities.swift */; };
+		A9DFB3DA285B00A4001C7348 /* EmployeeDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DFB3D9285B00A3001C7348 /* EmployeeDetailsVC.swift */; };
+		A9DFB3DC285B01C1001C7348 /* EmployeeDetailsUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DFB3DB285B01C1001C7348 /* EmployeeDetailsUtility.swift */; };
+		A9DFB3DE285B107C001C7348 /* UploadPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DFB3DD285B107C001C7348 /* UploadPostVC.swift */; };
 		B9D4DB5A285901F500B39D03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9D4DB59285901F500B39D03 /* GoogleService-Info.plist */; };
 		FB624C3D28316BB600FDB328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB624C3C28316BB600FDB328 /* AppDelegate.swift */; };
 		FB624C3F28316BB600FDB328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB624C3E28316BB600FDB328 /* SceneDelegate.swift */; };
@@ -36,6 +39,9 @@
 		A9B3D161285792AC00C880A9 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		A9B3D163285796F600C880A9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		A9B3D16528589D6C00C880A9 /* DBUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBUtilities.swift; sourceTree = "<group>"; };
+		A9DFB3D9285B00A3001C7348 /* EmployeeDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsVC.swift; sourceTree = "<group>"; };
+		A9DFB3DB285B01C1001C7348 /* EmployeeDetailsUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsUtility.swift; sourceTree = "<group>"; };
+		A9DFB3DD285B107C001C7348 /* UploadPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostVC.swift; sourceTree = "<group>"; };
 		B9D4DB59285901F500B39D03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB624C3928316BB600FDB328 /* finalLinkedIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalLinkedIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB624C3C28316BB600FDB328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 				A9B3D161285792AC00C880A9 /* ProfileVC.swift */,
 				A9B3D163285796F600C880A9 /* HomeVC.swift */,
 				1AF22E7B285A09BE00C821A2 /* ForgetPasswordVC.swift */,
+				A9DFB3D9285B00A3001C7348 /* EmployeeDetailsVC.swift */,
+				A9DFB3DB285B01C1001C7348 /* EmployeeDetailsUtility.swift */,
+				A9DFB3DD285B107C001C7348 /* UploadPostVC.swift */,
 			);
 			path = finalLinkedIN;
 			sourceTree = "<group>";
@@ -197,6 +206,9 @@
 				FB624C3D28316BB600FDB328 /* AppDelegate.swift in Sources */,
 				A9B3D162285792AC00C880A9 /* ProfileVC.swift in Sources */,
 				3657B83F2855DA5000AD6AEF /* EmpRegisterVC.swift in Sources */,
+				A9DFB3DE285B107C001C7348 /* UploadPostVC.swift in Sources */,
+				A9DFB3DA285B00A4001C7348 /* EmployeeDetailsVC.swift in Sources */,
+				A9DFB3DC285B01C1001C7348 /* EmployeeDetailsUtility.swift in Sources */,
 				FB624C3F28316BB600FDB328 /* SceneDelegate.swift in Sources */,
 				3657B8412855E38500AD6AEF /* LoginVC.swift in Sources */,
 			);
