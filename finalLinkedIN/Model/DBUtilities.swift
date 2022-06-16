@@ -20,6 +20,7 @@ struct Account {
     var city : String
     var state : String
     var country : String
+   
     
     
     //object to dict conversion
@@ -38,7 +39,7 @@ class DBUtility {
     let dbRef = Database.database().reference()
     let loggedInUser = Auth.auth().currentUser
     
-    func saveEmpDetails(fullname:String, email: String, city: String, mobile: String, dob: String, state : String, country : String){
+    func saveEmpDetails(fullname:String, email: String, city: String, mobile: String, dob: String, state : String, country : String, Post : String){
           
           let loggedInUser = Auth.auth().currentUser
           let EmpAccount = Account(fullname: fullname, dob: dob, email: email, mobile: mobile, city: city, state: state, country: country)
@@ -75,6 +76,7 @@ class DBUtility {
                         let state = info["state"] ?? ""
                         let country = info["country"] ?? ""
                         let dob = info["dob"] ?? ""
+                       
 
                         print("\(fullname)")
                         print("\(email)")
@@ -83,6 +85,7 @@ class DBUtility {
                         print("\(state)")
                         print("\(country)")
                         print("\(dob)")
+                        
 
                         let acc = Account(fullname: fullname, dob: dob, email: email, mobile: mobile, city: city, state: state, country: country)
                    
