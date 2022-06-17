@@ -15,6 +15,7 @@ class OrgRegisterVC: UIViewController {
     @IBOutlet weak var OrgnameT: UITextField!
     @IBOutlet weak var WebsiteT: UITextField!
     @IBOutlet weak var EmailT: UITextField!
+    @IBOutlet weak var ContactT: UITextField!
     @IBOutlet weak var Passt: UITextField!
     @IBOutlet weak var CnfrmPassT: UITextField!
     @IBOutlet weak var LocationT: UITextField!
@@ -29,6 +30,7 @@ class OrgRegisterVC: UIViewController {
         let OrganizationName = OrgnameT.text ?? ""
         let WebsiteName = WebsiteT.text ?? ""
         let email = EmailT.text ?? ""
+        let ContactNo = ContactT.text ?? ""
         let password = Passt.text ?? ""
         let location = LocationT.text ?? ""
         
@@ -36,6 +38,7 @@ class OrgRegisterVC: UIViewController {
             if err == nil {
                 print("No error in registration")
                 self.showAlert(title: "Registeration successfull", msg: "Login using Email ID and Password")
+                OrgUtility.instance.saveOrgDetails(OrgName: OrganizationName, website: WebsiteName, email: email, ContactNo: ContactNo, location: location)
                 
         }
             else {
