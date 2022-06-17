@@ -789,6 +789,71 @@
             </objects>
             <point key="canvasLocation" x="3900" y="-467"/>
         </scene>
+        <!--Mobile Chat WindowVC-->
+        <scene sceneID="yxm-b8-dwW">
+            <objects>
+                <viewController storyboardIdentifier="mobileChatWindow" id="TL1-yM-7ey" customClass="MobileChatWindowVC" customModule="ALX_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QgS-0P-MdU">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect with Seller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvL-tu-Vgh">
+                                <rect key="frame" x="50" y="114" width="290" height="27.333333333333343"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GyY-R2-der">
+                                <rect key="frame" x="20" y="360" width="350" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="evc-Hd-2SG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxR-Fh-v42">
+                                <rect key="frame" x="160" y="460" width="70" height="52.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.0" green="0.35931575300000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="submitClicked:" destination="TL1-yM-7ey" eventType="touchUpInside" id="AOg-HI-AM1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-Ut-dxE">
+                                <rect key="frame" x="370" y="320" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qLd-95-WL5"/>
+                        <color key="backgroundColor" red="0.17008547008547009" green="0.67471900031675436" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rvL-tu-Vgh" firstAttribute="top" secondItem="qLd-95-WL5" secondAttribute="top" constant="70" id="0OW-iI-cDf"/>
+                            <constraint firstItem="qLd-95-WL5" firstAttribute="trailing" secondItem="FxR-Fh-v42" secondAttribute="trailing" constant="160" id="AFV-ni-KAG"/>
+                            <constraint firstItem="rvL-tu-Vgh" firstAttribute="leading" secondItem="qLd-95-WL5" secondAttribute="leading" constant="50" id="MgM-t3-LXv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="GyY-R2-der" secondAttribute="bottom" constant="400" id="NcC-5K-QDf"/>
+                            <constraint firstItem="FxR-Fh-v42" firstAttribute="top" secondItem="GyY-R2-der" secondAttribute="bottom" constant="50" id="Nxs-UL-FQC"/>
+                            <constraint firstItem="FxR-Fh-v42" firstAttribute="leading" secondItem="qLd-95-WL5" secondAttribute="leading" constant="160" id="YKl-0o-4rW"/>
+                            <constraint firstItem="qLd-95-WL5" firstAttribute="trailing" secondItem="rvL-tu-Vgh" secondAttribute="trailing" constant="50" id="eud-fY-iPH"/>
+                            <constraint firstItem="GyY-R2-der" firstAttribute="leading" secondItem="qLd-95-WL5" secondAttribute="leading" constant="20" id="kdr-qV-67r"/>
+                            <constraint firstItem="qLd-95-WL5" firstAttribute="trailing" secondItem="GyY-R2-der" secondAttribute="trailing" constant="20" id="mxD-b8-Pos"/>
+                            <constraint firstItem="wwM-Ut-dxE" firstAttribute="trailing" secondItem="GyY-R2-der" secondAttribute="trailing" id="qsu-VJ-s2p"/>
+                            <constraint firstItem="GyY-R2-der" firstAttribute="top" secondItem="wwM-Ut-dxE" secondAttribute="bottom" constant="40" id="sDl-4E-nbr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterMsgT" destination="GyY-R2-der" id="Dbo-8U-Hw4"/>
+                        <outlet property="msgL" destination="wwM-Ut-dxE" id="V7q-Mv-pDU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XmD-Mi-CYZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5196.7289719626169" y="-838.44492440604756"/>
+        </scene>
     </scenes>
     <color key="tintColor" systemColor="tintColor"/>
     <resources>
